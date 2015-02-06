@@ -1,59 +1,56 @@
-var counter = 0;
-var pages = $('section.showcase');
-var pagelen = pages.length - 1;
 
-$(window).bind('mousewheel', function(e){
-	if(e.originalEvent.wheelDelta < 0) {
-		//scroll down
-		if(counter == pagelen){
-			return false;
-		}else{
-			pages.eq(counter).removeClass('active');
-			pages.eq(counter).addClass('inactive');
-			pages.eq(counter + 1).removeClass('inactive');
-			pages.eq(counter + 1).addClass('active');
-			clearTimeout($.data(this, 'scrollTimer'));
-			$.data(this, 'scrollTimer', setTimeout(function() {
-				counter ++;
-			}, 500))
-		}
+var lastAnimation = 0;
+var quietPeriod = 300;
 
+$.fn.moveDown = function(){
+	var pages = $('section.showcase');
+	var pagelen = pages.length - 1;
+	var index = $('section.showcase.active').data('section');
+	var current = pages.eq(index);
+	var next = pages.eq(index + 1);
+	if(index == pagelen){
+		return false
 	}else{
-		if(counter == 0){
-			return false;
-		}else{
-			pages.eq(counter - 1).removeClass('inactive');
-			pages.eq(counter - 1).addClass('active');
-			 pages.eq(counter).removeClass('active');
-			
-			clearTimeout($.data(this, 'scrollTimer'));
-			$.data(this, 'scrollTimer', setTimeout(function() {
-				counter --;
-			}, 500))
-		}
+		current.removeClass('active');
+		current.addClass('inactive');
+		next.removeClass('inactive');
+		next.addClass('active');
 	}
+}
 
-	return false;
-})
+$.fn.moveUp = function(){
+	var pages = $('section.showcase');
+	var index = $('section.showcase.active').data('section');
+	var current = pages.eq(index);
+	var next = pages.eq(index - 1);
+	if(index == 0){
+		return false;
+	}else{
+		next.removeClass('inactive');
+		next.addClass('active');
+		current.removeClass('active');
+	}
+}
 
+$(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+    event.preventDefault();
+    var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+    init_scroll(event, delta);
+});
 
- //Firefox
- $(window).bind('DOMMouseScroll', function(e){
-     if(e.originalEvent.detail > 0) {
-         //scroll down
-		pages.eq(counter).removeClass('active');
-		pages.eq(counter).addClass('inactive');
-		pages.eq(counter + 1).removeClass('inactive');
-		pages.eq(counter + 1).addClass('active');
-		clearTimeout($.data(this, 'scrollTimer'));
-		$.data(this, 'scrollTimer', setTimeout(function() {
-			counter +=1;
-		}, 500))
-     }else {
-         //scroll up
-         console.log('Up');
-     }
+function init_scroll(event, delta) {
+    deltaOfInterest = delta;
+    var timeNow = new Date().getTime();
+    // Cancel scroll if currently animating or within quiet period
+    if(timeNow - lastAnimation < quietPeriod + 700) {
+        event.preventDefault();
+        return;
+    }
 
-     //prevent page fom scrolling
-     return false;
- });
+    if (deltaOfInterest < 0) {
+        $(this).moveDown()
+    } else {
+        $(this).moveUp()
+    }
+    lastAnimation = timeNow;
+}
