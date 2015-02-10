@@ -1,5 +1,7 @@
 $(window).load(function(){
-		$('.landing').fadeIn('700');
+		$('.landing').fadeIn('700',function(){
+			$(this).addClass('active');
+		});
 		$('.pagination').fadeIn('700');
 		setTimeout(function(){
 			$('.about').show();
