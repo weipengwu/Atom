@@ -9,20 +9,95 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div class="content">
-            <section class="showcase landing active" data-section="0" style="z-index:6">Landing page</section>
-            <section class="showcase logo" data-section="1" style="z-index:5">Sign in Form</section>
-            <section class="showcase about" data-section="2" style="z-index:4">What is ATOM?</section>
+            <section class="showcase landing active" data-section="0" style="z-index:6">
+                <div class="form_container">
+                    <img src="img/logo.png" alt="logo">
+                    <h2 class="signin">Sign In</h2>
+                    <h3 class="subheading">Please log in to access this page.</h3>
+                    <form class="signinForm" method="post" action="">
+                        <input type="text" placeholder="Email" name="email">
+                        <input type="submit" value="Sign in">
+                    </form>
+                    <div>
+                        <a href="" class="createaccount">Create an Account</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <nav>
+                        <ul>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul>
+                    </nav>
+                    <div class="know-more">Do you want to know more?</div>
+                </div>
+            </section>
+            <section class="showcase about" data-section="1" style="z-index:5">
+                <div class="top">
+                    <img src="img/logo-top.png">
+                    <div class="top-container"> 
+                        <form class="search">
+                            <input type="text" placeholder="Search" name="search" class="search_query">
+                        </form>
+                        <a href="" class="reg_button">Register</a>
+                        <a href="" class="signin_button">Sign in</a>
+                    </div>
+                </div>
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <div class="showcase-content">
+                            <h1 class="section-title">What is ATOM?</h1>
+                            <p>Atom is a self serve tool that small business owners can use to leverage the power of programmatic advertising to drive revenue and acquire new customers.</p>
+                            <p><a href="" class="getstarted">Get Started</a></p>
+                        </div>
+                    </div>
+                    <div class="section-graphic">
+                        <img src="img/about-graphic.png">
+                    </div>
+                </div>
+            </section>
+            <section class="showcase persona" data-section="2" style="z-index:4">
+                <div class="top">
+                    <img src="img/logo-top.png">
+                    <div class="top-container"> 
+                        <form class="search">
+                            <input type="text" placeholder="Search" name="search" class="search_query">
+                        </form>
+                        <a href="" class="reg_button">Register</a>
+                        <a href="" class="signin_button">Sign in</a>
+                    </div>
+                </div>
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <div class="showcase-content">
+                            <h1 class="section-title">What are personas?</h1>
+                            <p>ATOM uses personas to help you describe your ideal customer. Once defined our technology is designed to scour the programmatic landscape for web and mobile users that match your business.</p>
+                        </div>
+                        <div class="section-graphic">
+                            <img src="img/persona-graphic-1.png" class="img1">
+                            <img src="img/persona-graphic-2.png" class="img2">
+                            <img src="img/persona-graphic-3.png" class="img3">
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
         </div>
-
+        <div class="pagination">
+            <div class="dot active" data-section="0"></div>
+            <div class="dot" data-section="1"></div>
+            <div class="dot" data-section="2"></div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
