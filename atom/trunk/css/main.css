@@ -570,9 +570,9 @@ section.devices.active .section-graphic img.phone{
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    -webkit-transition: -webkit-transform .7s cubic-bezier(.165,.84,.44,1),opacity .5s cubic-bezier(.165,.84,.44,1);
-    -moz-transition: -moz-transform .7s cubic-bezier(.165,.84,.44,1),opacity .5s cubic-bezier(.165,.84,.44,1);
-    transition: transform .7s cubic-bezier(.165,.84,.44,1),opacity .5s cubic-bezier(.165,.84,.44,1);
+    -webkit-transition: -webkit-transform .7s cubic-bezier(.165,.84,.44,1),opacity .2s cubic-bezier(.165,.84,.44,1);
+    -moz-transition: -moz-transform .7s cubic-bezier(.165,.84,.44,1),opacity .2s cubic-bezier(.165,.84,.44,1);
+    transition: transform .7s cubic-bezier(.165,.84,.44,1),opacity .2s cubic-bezier(.165,.84,.44,1);
     -webkit-transition-delay: .3s;
     -moz-transition-delay: .3s;
     transition-delay: .3s;
