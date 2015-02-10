@@ -1,6 +1,6 @@
 
 var lastAnimation = 0;
-var quietPeriod = 300;
+var quietPeriod = 1000;
 
 $.fn.moveDown = function(){
 	var pages = $('section.showcase');
@@ -11,10 +11,15 @@ $.fn.moveDown = function(){
 	if(index == pagelen){
 		return false
 	}else{
-		current.removeClass('active');
 		current.addClass('inactive');
 		next.removeClass('inactive');
-		next.addClass('active');
+		setTimeout(function(){
+			current.removeClass('active');
+			next.addClass('active');
+		},700)
+		
+		$(".pagination .dot" + "[data-section='" + index + "']").removeClass("active");
+		$(".pagination .dot" + "[data-section='" + (index + 1) + "']").addClass("active");
 	}
 }
 
@@ -27,9 +32,46 @@ $.fn.moveUp = function(){
 		return false;
 	}else{
 		next.removeClass('inactive');
-		next.addClass('active');
-		current.removeClass('active');
+		setTimeout(function(){
+			next.addClass('active');
+			current.removeClass('active');
+		},700)
+		
+		$(".pagination .dot" + "[data-section='" + index + "']").removeClass("active");
+		$(".pagination .dot" + "[data-section='" + (index - 1) + "']").addClass("active");
 	}
+}
+
+function moveToIndex(toIndex){
+	var pages = $('section.showcase');
+	var pagelen = pages.length - 1;
+	var index = $('section.showcase.active').data('section');
+	var current = pages.eq(index);
+	var to = pages.eq(toIndex);
+	if(toIndex > index){
+		for (var i = toIndex - 1; i >= index; i--) {
+			pages.eq(i).addClass('inactive');
+		};
+		to.removeClass('inactive');
+		setTimeout(function(){
+			current.removeClass('active');
+			to.addClass('active');
+		},700)
+	}
+	else if(toIndex < index){
+		for (var i = toIndex; i <= index; i++) {
+			pages.eq(i).removeClass('inactive');
+		};
+		setTimeout(function(){
+			current.removeClass('active');
+			to.addClass('active');
+		},700)
+	}
+	
+	
+	$(".pagination .dot" + "[data-section='" + index + "']").removeClass("active");
+	$(".pagination .dot" + "[data-section='" + toIndex + "']").addClass("active");
+	
 }
 
 $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
@@ -53,4 +95,12 @@ function init_scroll(event, delta) {
         $(this).moveUp()
     }
     lastAnimation = timeNow;
+
 }
+
+$('.pagination .dot').on('click', function(){
+	var toIndex = $(this).data('section');
+	moveToIndex(toIndex);
+})
+
+
