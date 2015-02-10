@@ -59,7 +59,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-    background: #396e7a;
+    background: #205362;
 }
 section.showcase{
     color: #fff;
@@ -70,6 +70,7 @@ section.showcase{
     top: 0;
     text-align: center;
     width: 100%;
+    min-width: 780px;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -217,6 +218,7 @@ section.about{
     top: 0;
     padding: 15px 0;
     width: 100%;
+    z-index: 99;
 }
 .showcase .top-container:after{
     clear: both;
@@ -254,7 +256,7 @@ section.about{
     width: 160px;  
 }
 .showcase .top .search input{
-    width: 100%;
+    width: 116px;
     background: transparent;
     font-size: 16px;
     font-weight: bold;
@@ -304,7 +306,8 @@ section.about .showcase-content{
     left: 50%;
     position: relative;
     text-align: left;
-    margin-left: 50px;
+    padding-left: 50px;
+    border-left: 1px solid rgba(255,255,255,.3);
 }
 section.about .getstarted{
     color: #28bb82;
@@ -358,7 +361,8 @@ section.persona .showcase-content{
     margin: 0 auto 0 auto;
 }
 section.persona .section-graphic img{
-    padding: 50px 40px 0 40px;
+    padding: 0 40px 0 40px;
+    margin-top: 50px;
     opacity: 0;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
@@ -395,11 +399,13 @@ section.persona .section-graphic img.img1{
     -webkit-transition-delay: 0;
     -moz-transition-delay: 0;
     transition-delay: 0;
+    border-right: 1px solid rgba(255,255,255,.2);
 }
 section.persona .section-graphic img.img2{
     -webkit-transition-delay: .2s;
     -moz-transition-delay: .2s;
     transition-delay: .2s;
+    border-right: 1px solid rgba(255,255,255,.2);
 }
 section.persona .section-graphic img.img3{
     -webkit-transition-delay: .4s;
@@ -429,7 +435,12 @@ section.insights .section-content .showcase-content{
     width: 920px;
     margin: 0 auto;
 }
-section.insights .section-graphic img{
+section.insights .section-content .showcase-content hr{
+    width: 300px;
+    margin: 1em auto;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+section.insights .section-graphic{
     opacity: 0;
     -webkit-transform: translateY(583px);
     -moz-transform: translateY(583px);
@@ -437,7 +448,7 @@ section.insights .section-graphic img{
     -o-transform: translateY(583px);
     transform: translateY(583px);
 }
-section.insights.active .section-graphic img{
+section.insights.active .section-graphic{
     opacity: 1;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -473,7 +484,16 @@ section.sandbox .showcase-content{
 section.sandbox .showcase-content h1, section.sandbox .showcase-content p{
     color: #515151 ;
 }
-section.sandbox .section-graphic img{
+section.sandbox .divider{
+    width: 1px;
+    height: 300px;
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    margin-top: -150px;
+    background: #b2b3b4;
+}
+section.sandbox .section-graphic{
     position: absolute;
     left: 50%;
     top: 20%;
@@ -485,7 +505,7 @@ section.sandbox .section-graphic img{
     -o-transform: translateX(200px);
     transform: translateX(200px);
 }
-section.sandbox.active .section-graphic img{
+section.sandbox.active .section-graphic{
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -629,20 +649,229 @@ section.devices.active .section-graphic img.phone{
     opacity: 1;
 }
 
-
-
-
-
-
-
+section.register{
+    background: url(../img/register-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+section.register .form_container{
+    left: 50%;
+    margin-left: -190px;
+    position: absolute;
+    top: 50%;
+    width: 380px;
+    margin-top: -150px;
+    opacity: 0;
+    -webkit-transform: translateY(250px);
+    -moz-transform: translateY(250px);
+    -ms-transform: translateY(250px);
+    -o-transform: translateY(250px);
+    transform: translateY(250px);
+}
+section.register.active .form_container{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.165,.84,.44,1),opacity .4s cubic-bezier(.165,.84,.44,1);
+    -moz-transition: -moz-transform .4s cubic-bezier(.165,.84,.44,1),opacity .4s cubic-bezier(.165,.84,.44,1);
+    transition: transform .4s cubic-bezier(.165,.84,.44,1),opacity .4s cubic-bezier(.165,.84,.44,1);
+}
+section.register .form_container h2{
+    font-size: 24px;
+    margin: 0;
+}
+section.register .form_container p{
+    font-size: 14px;
+    margin: 0 0 30px 0;
+}
+.regForm input[type="text"]{
+    width: 260px;
+    padding: 20px;
+    border: 0;
+    color: #aaadae;
+    font-weight: bold;
+    line-height: 1;
+    outline: 0;
+    font-size: 18px;
+    height: 18px;
+    margin-bottom: 25px;
+}
+.regForm input[type="submit"]{
+    padding: 20px;
+    background: #29b280;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    border: 0;
+    outline: 0;
+    line-height: 1;
+    height: 58px;
+}
+section.register .form_container hr{
+    margin: 30px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+section.register .form_container .back{
+    padding: 20px;
+    background: #0281c2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 260px;
+    border: 0;
+    outline: 0;
+    line-height: 1;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+}
+section.register.complete .form_container{
+    margin-top: 100px;
+    top: 0;
+}
+section.register.complete .regForm input[type="text"]{
+    padding-left: 60px;
+    width: 220px;
+    margin-bottom: 10px;
+}
+section.register.complete .regForm input.emailfield{
+    background: #fff url('../img/envelope.png') 15px center no-repeat;
+}
+section.register.complete .regForm .checkbox{
+    margin: 5px 0 30px 0;
+}
+section.register.complete .regForm .checkbox input{
+    margin-right: 20px;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (max-width: 1280px) {
+    .showcase .top .search{
+        margin-right: 20px;
+    }
+    .logo{
+        width: 100px;
+    }
+    section.landing .form_container h2.signin{
+        margin: 30px 0 0 0;
+    }
+    section.landing .form_container .signinForm{
+        margin: 30px auto 20px auto;
+        padding-bottom: 20px;
+    }
+    section.landing .form_container{
+        margin-top: -225px;
+    }
+    .section-content h1{
+        font-size: 28px;
+        margin: 0 0 20px 0;
+    }
+    .section-content p{
+        font-size: 22px;
+        margin: 15px 0;
+    }
+    section.about .showcase-content{
+        width: 420px;
+    }
+    section.about .section-graphic{
+        margin-right: 0;
+    }
+    section.about .section-graphic img{
+        width: 80%;
+    }
+    section.persona .showcase-content{
+        width: 720px;
+    }
+    section.persona .section-graphic{
+        width: 720px;
+        margin: 0 auto;
+    }
+    section.persona .section-graphic img{
+        width: 150px;
+    }
+    section.insights .section-content{
+        margin-top: 80px;
+    }
+    section.insights .section-content .showcase-content{
+        width: 720px;
+    }
+    section.insights .section-graphic img{
+        width: 70%;
+    }
+    section.sandbox .showcase-content{
+        width: 300px;
+    }
+    section.sandbox .section-graphic{
+        margin-left: 0;
+    }
+    section.sandbox .section-graphic img{
+        width: 80%;
+    }
+    section.devices .section-content{
+        margin-top: 80px;
+    }
+    section.devices .section-graphic{
+        margin: 40px auto 0 auto;
+    }
 }
-
+@media (min-width: 780px) and (max-width: 1000px){
+    .showcase .top{
+        text-align: left;
+    }
+    .showcase .top img{
+        margin-left: 20px;
+    }
+    section.about .showcase-content{
+        width: 320px;
+    }
+    .section-content h1{
+        font-size: 24px;
+    }
+    .section-content p{
+        font-size: 20px;
+    }
+    section.about .section-graphic{
+        right: 45%;
+    }
+    section.about .section-graphic img{
+        width: 70%;
+    }
+    section.persona .showcase-content{
+        width: 540px;
+    }
+    section.persona .section-graphic{
+        width: 540px;
+    }
+    section.persona .section-graphic img{
+        width: 90px;
+    }
+    section.insights .section-content .showcase-content{
+        width: 620px;
+    }
+    section.sandbox .showcase-content{
+        width: 230px;
+    }
+    section.devices .section-content .showcase-content{
+        width: 540px;
+    }
+    section.devices .section-graphic{
+        width: 540px;
+    }
+    section.devices .section-graphic img.mac{
+        width: 90%;
+    }
+    section.devices .section-graphic img.phone{
+        width: 200px;
+    }
+}
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
