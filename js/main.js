@@ -2,6 +2,9 @@ $(window).load(function(){
 		$('.landing').fadeIn('700',function(){
 			$(this).addClass('active');
 		});
+		$('.register').fadeIn('700',function(){
+			$(this).addClass('active');
+		});
 		$('.pagination').fadeIn('700');
 		setTimeout(function(){
 			$('.about').show();
