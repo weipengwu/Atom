@@ -1,3 +1,9 @@
+$(window).load(function(){
+		$('.content').fadeIn('700');
+		$('.pagination').fadeIn('700');
+	
+})
+
 
 var lastAnimation = 0;
 var quietPeriod = 1000;
