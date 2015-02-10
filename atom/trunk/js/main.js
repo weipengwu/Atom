@@ -1,7 +1,13 @@
 $(window).load(function(){
-		$('.content').fadeIn('700');
+		$('.landing').fadeIn('700');
 		$('.pagination').fadeIn('700');
-	
+		setTimeout(function(){
+			$('.about').show();
+			$('.persona').show();
+			$('.insights').show();
+			$('.sandbox').show();
+			$('.devices').show();
+		},500)
 })
 
 
