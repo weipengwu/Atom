@@ -167,6 +167,9 @@ section.landing .form_container .signinForm:after{
     line-height: 1;
     height: 58px;
 }
+.signinForm input[type="submit"]:hover{
+    background: #23CB8E;
+}
 .createaccount{
     padding: 20px 0;
     font-size: 18px;
@@ -178,6 +181,9 @@ section.landing .form_container .signinForm:after{
     text-decoration: none;
     display: block;
     margin: 0 auto;
+}
+.createaccount:hover{
+    background: #1598DB;
 }
 section.landing .footer{
     position: absolute;
@@ -219,6 +225,13 @@ section.about{
     padding: 15px 0;
     width: 100%;
     z-index: 99;
+    text-align: left;
+}
+.showcase.register .top{
+    text-align: center;
+}
+.showcase .top .logo{
+    margin-left: 40px;
 }
 .showcase .top-container:after{
     clear: both;
@@ -241,6 +254,9 @@ section.about{
     outline: 0;
     line-height: 1;
 }
+.showcase .top .reg_button:hover{
+    opacity: .8;
+}
 .showcase .top .signin_button{
     float: right;
     padding: 12px 20px;
@@ -251,35 +267,8 @@ section.about{
     outline: 0;
     line-height: 1;
 }
-.showcase .top .search{
-    float: right;
-    width: 160px;  
-}
-.showcase .top .search input{
-    width: 116px;
-    background: transparent;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 20px;
-    border: 2px solid rgba(255,255,255,0.3);
-    border-radius: 10px;
-    line-height: 1;
-    outline: 0;
-    color: rgba(255,255,255,0.3);
-}
-.search_query::-webkit-input-placeholder { /* WebKit browsers */
-    color:    rgba(255,255,255,0.3);
-}
-.search_query:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    rgba(255,255,255,0.3);
-   opacity:  1;
-}
-.search_query::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    rgba(255,255,255,0.3);
-   opacity:  1;
-}
-.search_query:-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    rgba(255,255,255,0.3);
+.showcase .top .signin_button:hover{
+    opacity: .8;
 }
 .section-wrapper{
     display: table;
@@ -291,7 +280,7 @@ section.about{
     vertical-align: middle;
 }
 .section-content h1{
-    font-size: 34px;
+    font-size: 36px;
     font-weight: bold;
     color: #fff;
     margin: 0 0 30px 0;
@@ -356,13 +345,28 @@ section.persona{
     -o-background-size: cover;
     background-size: cover;
 }
+section.persona .section-content{
+    display: block;
+}
 section.persona .showcase-content{
     width: 980px;
-    margin: 0 auto 0 auto;
+    margin: 100px auto 0 auto;
+}
+section.persona .getstarted{
+    color: #dc6cea;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    line-height: 1;
+    text-decoration: none;
+    background: #fff;
+}
+section.persona .section-graphic{
+    position: relative;
+    margin-top: 40px;
 }
 section.persona .section-graphic img{
-    padding: 0 40px 0 40px;
-    margin-top: 50px;
+    position: absolute;
     opacity: 0;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
@@ -399,18 +403,25 @@ section.persona .section-graphic img.img1{
     -webkit-transition-delay: 0;
     -moz-transition-delay: 0;
     transition-delay: 0;
-    border-right: 1px solid rgba(255,255,255,.2);
+    top: 0;
+    left: 50%;
+    margin-left: -122.5px;
 }
 section.persona .section-graphic img.img2{
     -webkit-transition-delay: .2s;
     -moz-transition-delay: .2s;
     transition-delay: .2s;
-    border-right: 1px solid rgba(255,255,255,.2);
+    top: 175px;
+    left: 50%;
+    margin-left: -225px;
 }
 section.persona .section-graphic img.img3{
     -webkit-transition-delay: .4s;
     -moz-transition-delay: .4s;
     transition-delay: .4s;
+    top: 175px;
+    left: 50%;
+    margin-left: -20px;
 }
 .showcase.persona .top .signin_button{
     color: #fff;
@@ -439,6 +450,15 @@ section.insights .section-content .showcase-content hr{
     width: 300px;
     margin: 1em auto;
     border-top: 1px solid rgba(255,255,255,0.3);
+}
+section.insights .getstarted{
+    color: #2a7ad2;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    line-height: 1;
+    text-decoration: none;
+    background: #fff;
 }
 section.insights .section-graphic{
     opacity: 0;
@@ -493,6 +513,15 @@ section.sandbox .divider{
     margin-top: -150px;
     background: #b2b3b4;
 }
+section.sandbox .getstarted{
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    line-height: 1;
+    text-decoration: none;
+    background: #fff;
+}
 section.sandbox .section-graphic{
     position: absolute;
     left: 50%;
@@ -524,24 +553,6 @@ section.sandbox.active .section-graphic{
     color: #fff;
     background: rgba(0,0,0,0.6);
 }
-.showcase.sandbox .top .search input{
-    border: 2px solid rgba(0,0,0,0.6);
-    color: rgba(0,0,0,0.6);
-}
-.showcase.sandbox .search_query::-webkit-input-placeholder { /* WebKit browsers */
-    color:    rgba(0,0,0,0.6);
-}
-.showcase.sandbox .search_query:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    rgba(0,0,0,0.6);
-   opacity:  1;
-}
-.showcase.sandbox .search_query::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    rgba(0,0,0,0.6);
-   opacity:  1;
-}
-.showcase.sandbox .search_query:-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    rgba(0,0,0,0.6);
-}
 
 section.devices{
     background: url(../img/devices-bg.jpg) no-repeat center center fixed; 
@@ -552,15 +563,27 @@ section.devices{
 }
 section.devices .section-content{
     display: block;
-    margin-top: 200px;
+    margin-top: 130px;
 }
 section.devices .section-content .showcase-content{
-    width: 740px;
+    width: 760px;
     margin: 0 auto;
+}
+section.devices .getstarted{
+    color: #6e6f70;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    line-height: 1;
+    text-decoration: none;
+    background: #fff;
+}
+.getstarted:hover{
+    opacity: .8;
 }
 section.devices .section-graphic{
     margin: 85px auto 0 auto;
-    width: 720px;
+    width: 800px;
     position: relative;
 }
 section.devices .section-graphic img.mac{
@@ -571,7 +594,7 @@ section.devices .section-graphic img.mac{
     -o-transform: translateY(487px);
     transform: translateY(487px);
     position: absolute;
-    left: 20px;
+    left: 0;
     top: 0;
 }
 section.devices.active .section-graphic img.mac{
@@ -585,17 +608,43 @@ section.devices.active .section-graphic img.mac{
     -moz-transition: -moz-transform .7s cubic-bezier(.165,.84,.44,1),opacity .7s cubic-bezier(.165,.84,.44,1);
     transition: transform .7s cubic-bezier(.165,.84,.44,1),opacity .7s cubic-bezier(.165,.84,.44,1);
 }
+section.devices .section-graphic img.tablet{
+    opacity: 0;
+    -webkit-transform: translateY(376px);
+    -moz-transform: translateY(376px);
+    -ms-transform: translateY(376px);
+    -o-transform: translateY(376px);
+    transform: translateY(376px);
+    position: absolute;
+    right: 50px;
+    top: 145px;
+    z-index: 2;
+}
+section.devices.active .section-graphic img.tablet{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .7s cubic-bezier(.165,.84,.44,1),opacity .7s cubic-bezier(.165,.84,.44,1);
+    -moz-transition: -moz-transform .7s cubic-bezier(.165,.84,.44,1),opacity .7s cubic-bezier(.165,.84,.44,1);
+    transition: transform .7s cubic-bezier(.165,.84,.44,1),opacity .7s cubic-bezier(.165,.84,.44,1);
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    transition-delay: .2s;
+}
 section.devices .section-graphic img.phone{
     position: absolute;
-    right: 0;
-    top: 90px;
-    z-index: 2;
+    right: -50px;
+    top: 230px;
+    z-index: 3;
     opacity: 0;
-    -webkit-transform: translateY(395px);
-    -moz-transform: translateY(395px);
-    -ms-transform: translateY(395px);
-    -o-transform: translateY(395px);
-    transform: translateY(395px);
+    -webkit-transform: translateY(276px);
+    -moz-transform: translateY(276px);
+    -ms-transform: translateY(276px);
+    -o-transform: translateY(276px);
+    transform: translateY(276px);
 }
 section.devices.active .section-graphic img.phone{
     opacity: 1;
@@ -607,9 +656,9 @@ section.devices.active .section-graphic img.phone{
     -webkit-transition: -webkit-transform .7s cubic-bezier(.165,.84,.44,1),opacity .2s cubic-bezier(.165,.84,.44,1);
     -moz-transition: -moz-transform .7s cubic-bezier(.165,.84,.44,1),opacity .2s cubic-bezier(.165,.84,.44,1);
     transition: transform .7s cubic-bezier(.165,.84,.44,1),opacity .2s cubic-bezier(.165,.84,.44,1);
-    -webkit-transition-delay: .3s;
-    -moz-transition-delay: .3s;
-    transition-delay: .3s;
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    transition-delay: .4s;
 }
 .showcase.devices .top .signin_button{
     color: #ffffff;
@@ -814,12 +863,21 @@ section.register .footer nav ul li a{
     section.persona .showcase-content{
         width: 720px;
     }
-    section.persona .section-graphic{
-        width: 720px;
-        margin: 0 auto;
-    }
     section.persona .section-graphic img{
         width: 150px;
+    }
+    section.persona .section-graphic img.img1{
+        margin-left: -75px;
+    }
+    section.persona .section-graphic img.img2{
+        top: 110px;
+        left: 50%;
+        margin-left: -135px;
+    }
+    section.persona .section-graphic img.img3{
+        top: 110px;
+        left: 50%;
+        margin-left: -10px;
     }
     section.insights .section-content{
         margin-top: 80px;
@@ -845,14 +903,19 @@ section.register .footer nav ul li a{
     section.devices .section-graphic{
         margin: 40px auto 0 auto;
     }
+    section.devices .section-graphic img.phone{
+        top: 170px;
+    }
+    section.devices.active .section-graphic img.tablet{
+        top: 90px;
+    }
+    .pagination .dot{
+        width: 14px;
+        height: 14px;
+        margin-bottom: 9px;
+    }
 }
 @media (min-width: 780px) and (max-width: 1000px){
-    .showcase .top{
-        text-align: left;
-    }
-    .showcase .top img{
-        margin-left: 20px;
-    }
     section.about .showcase-content{
         width: 320px;
     }
@@ -869,13 +932,7 @@ section.register .footer nav ul li a{
         width: 70%;
     }
     section.persona .showcase-content{
-        width: 540px;
-    }
-    section.persona .section-graphic{
-        width: 540px;
-    }
-    section.persona .section-graphic img{
-        width: 90px;
+        width: 600px;
     }
     section.insights .section-content .showcase-content{
         width: 620px;
@@ -894,6 +951,11 @@ section.register .footer nav ul li a{
     }
     section.devices .section-graphic img.phone{
         width: 200px;
+    }
+    .pagination .dot{
+        width: 12px;
+        height: 12px;
+        margin-bottom: 7px;
     }
 }
 @media print,
