@@ -120,4 +120,17 @@ $('.pagination .dot').on('click', function(){
 	moveToIndex(toIndex);
 })
 
-
+$(document).swipe({
+	swipeDown:function(event, direction, distance, duration, fingerCount) {
+      $(this).moveDown();  
+    },
+    //Default is 75px, set to 0 for demo so any distance triggers swipe
+    threshold:0
+})
+$(document).swipe({
+	swipeUp:function(event, direction, distance, duration, fingerCount) {
+      $(this).moveUp();  
+    },
+    //Default is 75px, set to 0 for demo so any distance triggers swipe
+    threshold:0
+})
