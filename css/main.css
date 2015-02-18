@@ -1117,8 +1117,11 @@ section.register .footer nav ul li a{
 }
 .mobile section.insights .section-content .showcase-content{
     width: 85%;
+    margin-top: 85px;
 }
-
+.mobile section.sandbox{
+    background: url(../img/mobile/sandbox-bg-m.jpg) no-repeat center center fixed;
+}
 .mobile section.sandbox .showcase-content{
     width: 85%;
     right: 0;
