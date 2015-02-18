@@ -47,7 +47,7 @@
                 </div>
                 <div class="section-wrapper">
                     <div class="section-graphic">
-                        <img src="img/about-graphic-m.png">
+                        <img src="img/mobile/about-graphic-m.png">
                     </div>
                     <div class="section-content">
                         <div class="showcase-content">
