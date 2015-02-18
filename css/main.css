@@ -1050,7 +1050,7 @@ section.register .footer nav ul li a{
     background: url('../img/mobile/menu-m.png') center center no-repeat;
     background-size: 20px 18px;
 }
-.showcase .top .logo{
+.mobile .showcase .top .logo{
     margin: 0;
     width: 90px;
 }

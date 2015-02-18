@@ -135,9 +135,9 @@ $('body').on('focus','.mobile .signinForm input[name="email"]',function(){
 	$('.mobile section.showcase').css('overflow','scroll');
 })
 
-$('.menu-mobile').on('click',function(){
+$('.menu-mobile').on('tap',function(){
 	$('.menu-open').show();
 })
-$('.menu-open .close').on('click', function(){
+$('.menu-open .close').on('tap', function(){
 	$('.menu-open').hide();
 })
