@@ -1003,10 +1003,11 @@ section.register .footer nav ul li a{
     margin: 0 auto;
     width: 70%;
     left: 0;
-    top: 80px;
+    top: 50px;
 }
 .mobile section.landing .form_container .signinForm{
     width: 100%;
+    margin-top: 20px;
 }
 .mobile .signinForm input[name="email"]{
     float: none;
@@ -1020,6 +1021,7 @@ section.register .footer nav ul li a{
 .mobile .signinForm input[type="submit"]{
     float: none;
     width: 100%;
+    margin-left: 0;
 }
 .mobile .createaccount{
     width: 100%;
