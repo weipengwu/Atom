@@ -1075,6 +1075,7 @@ section.register .footer nav ul li a{
 .mobile .section-content h1{
     font-size: 23px;
     margin-bottom: 15px;
+    line-height: 1;
 }
 .mobile .section-content p{
     font-size: 15px;
@@ -1134,6 +1135,31 @@ section.register .footer nav ul li a{
 }
 .mobile section.sandbox .section-graphic img{
     margin-left: 25%;
+}
+.mobile section .section-wrapper{
+    display: block;
+}
+.mobile section.devices{
+    background: url(../img/mobile/devices-bg-m.jpg) no-repeat center center fixed;
+}
+.mobile section.devices .section-content .showcase-content{
+    width: 85%;
+}
+.mobile section.devices .section-graphic{
+    width: 85%;
+}
+.mobile section.devices .section-graphic img.mac{
+    width: 100%;
+}
+.mobile section.devices .section-graphic img.tablet{
+    width: 80%;
+    top: 30px;
+    right: -10px;
+}
+.mobile section.devices .section-graphic img.phone{
+    width: 50%;
+    top: 120px;
+    right: -40px;
 }
 .mobile.pagination{
     left: 15px;
