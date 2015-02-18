@@ -39,13 +39,6 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <nav>
-                        <ul>
-                            <li><a href="">Terms</a></li>
-                            <li><a href="">Privacy</a></li>
-                        </ul>
-                    </nav>
-                    <div class="know-more">Do you want to know more?</div>
                 </div>
             </section>
             <section class="showcase about" data-section="1" style="z-index:5;display:none">
