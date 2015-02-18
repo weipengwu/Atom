@@ -123,7 +123,7 @@ $(document).swipe({
       $(this).moveUp();  
     },
     //Default is 75px, set to 0 for demo so any distance triggers swipe
-    threshold:0
+    threshold:20
 })
 
 $('body').on('focus','.mobile .signinForm input[name="email"]',function(){
@@ -135,14 +135,8 @@ $(document).ready(function(){
 		var toIndex = $(this).data('section');
 		moveToIndex(toIndex);
 	})
-	$('body').on('click', '.mobile.pagination .dot', function(){
-		var toIndex = $(this).data('section');
-		moveToIndex(toIndex);
-		alert('dot');
-	})
-	$('body').on('click','.menu-mobile',function(){
+	$('.menu-mobile').on('click',function(){
 		$('.menu-open').show();
-		alert('nav');
 	})
 	$('.menu-open .close').on('click', function(){
 		$('.menu-open').hide();
