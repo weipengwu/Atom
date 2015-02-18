@@ -1118,6 +1118,17 @@ section.register .footer nav ul li a{
 .mobile section.insights .section-content .showcase-content{
     width: 85%;
 }
+
+.mobile section.sandbox .showcase-content{
+    width: 85%;
+    right: 0;
+}
+.mobile section.sandbox .section-graphic{
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+}
 .mobile.pagination{
     left: 15px;
 }
