@@ -1048,7 +1048,7 @@ section.register .footer nav ul li a{
     position: relative;
     top: 0;
     right: auto;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 .mobile section.about .section-graphic img{
@@ -1075,6 +1075,12 @@ section.register .footer nav ul li a{
 .mobile .section-content p{
     font-size: 15px;
     margin: 10px 0;
+}
+.mobile section.about .getstarted{
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
