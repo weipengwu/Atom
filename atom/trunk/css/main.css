@@ -1087,11 +1087,12 @@ section.register .footer nav ul li a{
     margin: 0 auto;
     padding: 15px 0;
 }
-.mobile section.about{
+.mobile section.persona{
     background: url(../img/mobile/persona-bg-m.jpg) no-repeat center center fixed;
 }
 .mobile section.persona .showcase-content{
-    width: 90%;
+    width: 85%;
+    margin-top: 80px;
 }
 .mobile section.persona .getstarted{
     display: block;
@@ -1100,7 +1101,17 @@ section.register .footer nav ul li a{
     margin: 0 auto;
     padding: 15px 0;
 }
-
+.mobile section.persona .section-graphic img{
+    width: 120px;
+}
+.mobile section.persona .section-graphic img.img2{
+    top: 80px;
+    margin-left: -127px;
+}
+.mobile section.persona .section-graphic img.img3{
+    top: 80px;
+    margin-left: -27px;
+}
 .mobile.pagination{
     left: 15px;
 }
