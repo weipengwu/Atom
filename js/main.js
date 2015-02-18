@@ -135,12 +135,12 @@ $(document).ready(function(){
 		var toIndex = $(this).data('section');
 		moveToIndex(toIndex);
 	})
-	$('body').bind('click', '.mobile.pagination .dot', function(){
+	$('body').on('click', '.mobile.pagination .dot', function(){
 		var toIndex = $(this).data('section');
 		moveToIndex(toIndex);
 		alert('dot');
 	})
-	$('.menu-mobile').bind('click',function(){
+	$('body').on('click','.menu-mobile',function(){
 		$('.menu-open').show();
 		alert('nav');
 	})
