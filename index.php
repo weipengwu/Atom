@@ -162,19 +162,6 @@
         </div>
         <?php else: ?>
         <div class="content">
-        <section class="menu-open" style="z-index: 99999; display:none">
-                <div class="close"></div>
-                <div class="row-1">
-                    <a href="">Sign In</a> | <a href="">Register</a>
-                </div>
-                <div class="nav">
-                    <div class="item" data-section="1">What is atom?</div>
-                    <div class="item" data-section="2">What are Personas?</div>
-                    <div class="item" data-section="3">Insights & Analytics</div>
-                    <div class="item" data-section="4">Our Sandbox</div>
-                    <div class="item" data-section="5">Devices</div>
-                </div>
-            </section>
             <section class="showcase landing" data-section="0" style="z-index:6;display:none">
                 <div class="form_container">
                     <img src="img/logo.png" alt="logo" class="logo">
@@ -201,7 +188,10 @@
             <section class="showcase about" data-section="1" style="z-index:5;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
-                    <div class="menu-mobile"></div>
+                    <div class="top-container"> 
+                        <a href="register.html" class="reg_button">Register</a>
+                        <a href="" class="signin_button">Sign in</a>
+                    </div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">

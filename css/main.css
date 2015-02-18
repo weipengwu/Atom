@@ -1041,7 +1041,7 @@ section.register .footer nav ul li a{
 .mobile .showcase .top{
     text-align: center;
 }
-.menu-mobile{
+.mobile .menu-mobile{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -1171,7 +1171,7 @@ section.register .footer nav ul li a{
     right: -40px;
 }
 
-.menu-open{
+.mobile .menu-open{
     background: #26b57f;
     opacity: 0.98;
     color: #fff;
@@ -1183,25 +1183,25 @@ section.register .footer nav ul li a{
     text-align: center;
     width: 100%;
 }
-.menu-open .close{
+.mobile .menu-open .close{
     position: absolute;
     top: 20px;
     right: 20px;
     background: url('../img/mobile/close-m.png') center center no-repeat;
     background-size: 16px 16px;
 }
-.menu-open .row-1{
+.mobile .menu-open .row-1{
     margin-top: 90px;
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 1;
 }
-.menu-open .row-1 a{
+.mobile .menu-open .row-1 a{
     color: #fff;
     font-size: 20px;
     line-height: 1;
 }
-.menu-open .nav .item{
+.mobile .menu-open .nav .item{
     font-size: 25px;
     margin-bottom: 30px;
 }
