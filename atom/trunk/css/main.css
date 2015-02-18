@@ -1038,7 +1038,35 @@ section.register .footer nav ul li a{
     padding: 12px 0;
     font-size: 15px;
 }
-
+.mobile .showcase .top{
+    text-align: center;
+}
+.mobile section.about .section-wrapper{
+    display: block;
+}
+.mobile section.about .section-graphic{
+    position: relative;
+    top: 0;
+    right: auto;
+    width: 70%;
+}
+.mobile section.about .section-graphic img{
+    width: 100%;
+}
+.mobile section.about{
+    background: url(../img/mobile/about-bg-m.jpg) no-repeat center center fixed;
+}
+.mobile .section-content{
+    display: block;
+}
+.mobile section.about .showcase-content{
+    width: 70%;
+    margin: 0 auto;
+    left: 0;
+    padding-left: 0;
+    border: 0;
+    text-align: center;
+}
 
 
 .mobile.pagination{
