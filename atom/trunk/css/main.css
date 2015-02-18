@@ -1009,11 +1009,16 @@ section.register .footer nav ul li a{
     width: 100%;
     margin-top: 20px;
 }
+.mobile section.landing .form_container h2.signin{
+    margin-top: 20px;
+}
 .mobile .signinForm input[name="email"]{
     float: none;
     width: 100%;
     margin-bottom: 12px;
     height: auto;
+    font-size: 15px;
+    padding: 12px 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1022,9 +1027,13 @@ section.register .footer nav ul li a{
     float: none;
     width: 100%;
     margin-left: 0;
+    padding: 12px 20px;
+    font-size: 15px;
 }
 .mobile .createaccount{
     width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
 }
 
 /* ==========================================================================
