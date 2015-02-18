@@ -115,11 +115,6 @@ function init_scroll(event, delta) {
 
 }
 
-$('.pagination .dot').on('click touch', function(){
-	var toIndex = $(this).data('section');
-	moveToIndex(toIndex);
-})
-
 $(document).swipe({
 	swipeDown:function(event, direction, distance, duration, fingerCount) {
       $(this).moveDown();  
@@ -135,9 +130,17 @@ $('body').on('focus','.mobile .signinForm input[name="email"]',function(){
 	$('.mobile section.showcase').css('overflow','scroll');
 })
 
-$('.menu-mobile').on('click touch',function(){
-	$('.menu-open').show();
-})
-$('.menu-open .close').on('click touch', function(){
-	$('.menu-open').hide();
+$(document).ready(function(){
+	$('.pagination .dot').on('click', function(){
+		var toIndex = $(this).data('section');
+		moveToIndex(toIndex);
+		alert('dot');
+	})
+	$('.menu-mobile').on('click',function(){
+		$('.menu-open').show();
+		alert('nav');
+	})
+	$('.menu-open .close').on('click', function(){
+		$('.menu-open').hide();
+	})
 })
