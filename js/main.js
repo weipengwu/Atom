@@ -134,9 +134,8 @@ $(document).ready(function(){
 	$('.pagination .dot').bind('click', function(){
 		var toIndex = $(this).data('section');
 		moveToIndex(toIndex);
-		alert('dot');
 	})
-	$('.mobile.pagination .dot').bind('click', function(){
+	$('body').bind('click', '.mobile.pagination .dot', function(){
 		var toIndex = $(this).data('section');
 		moveToIndex(toIndex);
 		alert('dot');

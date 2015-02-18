@@ -153,12 +153,12 @@
             </section>
         </div>
         <div class="pagination mobile" style="display:none">
-            <div class="dot active" data-section="0">a</div>
-            <div class="dot" data-section="1">a</div>
-            <div class="dot" data-section="2">a</div>
-            <div class="dot" data-section="3">a</div>
-            <div class="dot" data-section="4">a</div>
-            <div class="dot" data-section="5">a</div>
+            <div class="dot active" data-section="0"></div>
+            <div class="dot" data-section="1"></div>
+            <div class="dot" data-section="2"></div>
+            <div class="dot" data-section="3"></div>
+            <div class="dot" data-section="4"></div>
+            <div class="dot" data-section="5"></div>
         </div>
         <?php else: ?>
         <div class="content">
