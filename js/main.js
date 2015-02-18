@@ -136,5 +136,5 @@ $(document).swipe({
 // }
 $('body').on('focus','.signinForm input[name="email"]',function(){
 	console.log('yes');
-	$('section.landing').css('overflow-y','scroll');
+	$('section.showcase').css('overflow','scroll');
 })
