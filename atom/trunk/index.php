@@ -165,7 +165,7 @@
                 </div>
             </section>
         </div>
-        <div class="pagination" style="display:none">
+        <div class="pagination mobile" style="display:none">
             <div class="dot active" data-section="0"></div>
             <div class="dot" data-section="1"></div>
             <div class="dot" data-section="2"></div>
