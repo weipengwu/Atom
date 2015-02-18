@@ -115,7 +115,7 @@ function init_scroll(event, delta) {
 
 }
 
-$('.pagination .dot').on('click', function(){
+$('.pagination .dot').on('click touch', function(){
 	var toIndex = $(this).data('section');
 	moveToIndex(toIndex);
 })
@@ -135,9 +135,9 @@ $('body').on('focus','.mobile .signinForm input[name="email"]',function(){
 	$('.mobile section.showcase').css('overflow','scroll');
 })
 
-$('.menu-mobile').on('tap',function(){
+$('.menu-mobile').on('click touch',function(){
 	$('.menu-open').show();
 })
-$('.menu-open .close').on('tap', function(){
+$('.menu-open .close').on('click touch', function(){
 	$('.menu-open').hide();
 })
