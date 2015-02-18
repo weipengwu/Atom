@@ -25,7 +25,7 @@
             if($detect->isMobile() && !$detect->isTablet()):
         ?>
         <div class="content mobile">
-            <!-- <section class="showcase menu-open" style="z-index: 99999; display:none">
+            <section class="menu-open" style="z-index: 99999; display:none">
                 <div class="close"></div>
                 <div class="row-1">
                     <a href="">Sign In</a> | <a href="">Register</a>
@@ -37,7 +37,7 @@
                     <div class="item" data-section="4">Our Sandbox</div>
                     <div class="item" data-section="5">Devices</div>
                 </div>
-            </section> -->
+            </section>
             <section class="showcase landing" data-section="0" style="z-index:6;display:none">
                 <div class="form_container">
                     <img src="img/logo.png" alt="logo" class="logo">

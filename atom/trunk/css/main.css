@@ -1174,6 +1174,14 @@ section.register .footer nav ul li a{
 .mobile .menu-open{
     background: #26b57f;
     opacity: 0.98;
+    color: #fff;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
 }
 .mobile .menu-open .close{
     position: absolute;
