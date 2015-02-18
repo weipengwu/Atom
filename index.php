@@ -44,6 +44,7 @@
             <section class="showcase about" data-section="1" style="z-index:5;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
+                    <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-graphic">
