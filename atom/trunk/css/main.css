@@ -991,6 +991,38 @@ section.register .footer nav ul li a{
 
 }
 
+/****   Mobile Phones Specific ******/
+.mobile section.showcase{
+    min-width: 0;
+}
+.mobile section.landing{
+    background: url(../img/mobile/landing-bg-m.jpg) no-repeat center center fixed; 
+}
+.mobile section.landing .form_container{
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+}
+.mobile section.landing .form_container .signinForm{
+    width: 100%;
+}
+.mobile .signinForm input[name="email"]{
+    float: none;
+    width: 100%;
+    margin-bottom: 12px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.mobile .signinForm input[type="submit"]{
+    float: none;
+    width: 100%;
+}
+.mobile .createaccount{
+    width: 100%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
