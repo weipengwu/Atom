@@ -25,6 +25,19 @@
             if($detect->isMobile() && !$detect->isTablet()):
         ?>
         <div class="content mobile">
+            <section class="showcase menu-open" style="z-index: 99999; display:none">
+                <div class="close"></div>
+                <div class="row-1">
+                    <a href="">Sign In</a> | <a href="">Register</a>
+                </div>
+                <div class="nav">
+                    <div class="item" data-section="1">What is atom?</div>
+                    <div class="item" data-section="2">What are Personas?</div>
+                    <div class="item" data-section="3">Insights & Analytics</div>
+                    <div class="item" data-section="4">Our Sandbox</div>
+                    <div class="item" data-section="5">Devices</div>
+                </div>
+            </section>
             <section class="showcase landing" data-section="0" style="z-index:6;display:none">
                 <div class="form_container">
                     <img src="img/logo.png" alt="logo" class="logo">
@@ -62,6 +75,7 @@
             <section class="showcase persona" data-section="2" style="z-index:4;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
+                    <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">
@@ -82,6 +96,7 @@
             <section class="showcase insights" data-section="3" style="z-index:3;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
+                    <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">
@@ -100,6 +115,7 @@
             <section class="showcase sandbox" data-section="4" style="z-index:2;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
+                    <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">
@@ -117,6 +133,7 @@
             <section class="showcase devices" data-section="5" style="z-index:1;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
+                    <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">

@@ -1170,6 +1170,33 @@ section.register .footer nav ul li a{
     top: 120px;
     right: -40px;
 }
+
+.mobile .menu-open{
+    background: #26b57f;
+    opacity: 0.98;
+}
+.mobile .menu-open .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url('../img/mobile/close-m.png') center center no-repeat;
+    background-size: 16px 16px;
+}
+.mobile .menu-open .row-1{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 1;
+}
+.mobile .menu-open .row-1 a{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+}
+.mobile .menu-open .nav .item{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
 .mobile.pagination{
     left: 15px;
 }
