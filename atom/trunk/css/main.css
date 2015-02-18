@@ -1008,6 +1008,8 @@ section.register .footer nav ul li a{
 .mobile section.landing .form_container .signinForm{
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
 }
 .mobile section.landing .form_container h2.signin{
     margin-top: 20px;
@@ -1039,10 +1041,10 @@ section.register .footer nav ul li a{
 
 
 
-.mobile .pagination{
+.mobile.pagination{
     left: 15px;
 }
-.mobile .pagination .dot{
+.mobile.pagination .dot{
     height: 12px;
     width: 12px;
     margin-bottom: 8px;
