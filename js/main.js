@@ -134,7 +134,6 @@ $(document).swipe({
 // if($('.signinForm input[name="email"]').is(':focus')){
 // 	$('section.landing').css('overflow-y','scroll');
 // }
-$('body').on('focus','.signinForm input[name="email"]',function(){
-	console.log('yes');
-	$('section.showcase').css('overflow','scroll');
+$('body').on('focus','.mobile .signinForm input[name="email"]',function(){
+	$('.mobile section.showcase').css('overflow','scroll');
 })

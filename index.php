@@ -44,22 +44,18 @@
             <section class="showcase about" data-section="1" style="z-index:5;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
-                    <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
-                        <a href="" class="signin_button">Sign in</a>
-                    </div>
                 </div>
                 <div class="section-wrapper">
+                    <div class="section-graphic">
+                        <img src="img/about-graphic-m.png">
+                    </div>
                     <div class="section-content">
                         <div class="showcase-content">
                             <h1 class="section-title">What is ATOM?</h1>
                             <p>Atom is a self serve tool that small business owners can use to leverage the power of programmatic advertising to drive revenue and acquire new customers.</p>
                             <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
                         </div>
-                    </div>
-                    <div class="section-graphic">
-                        <img src="img/about-graphic.png">
-                    </div>
+                    </div> 
                 </div>
             </section>
             <section class="showcase persona" data-section="2" style="z-index:4;display:none">
