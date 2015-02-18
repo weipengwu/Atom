@@ -1043,6 +1043,7 @@ section.register .footer nav ul li a{
 }
 .mobile .menu-mobile{
     position: absolute;
+    top: 0;
     right: 20px;
     width: 20px;
     height: 18px;
