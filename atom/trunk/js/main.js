@@ -131,9 +131,13 @@ $(document).swipe({
     threshold:0
 })
 
-// if($('.signinForm input[name="email"]').is(':focus')){
-// 	$('section.landing').css('overflow-y','scroll');
-// }
 $('body').on('focus','.mobile .signinForm input[name="email"]',function(){
 	$('.mobile section.showcase').css('overflow','scroll');
+})
+
+$('.menu-mobile').on('click',function(){
+	$('.menu-open').show();
+})
+$('.menu-open .close').on('click', function(){
+	$('.menu-open').hide();
 })
