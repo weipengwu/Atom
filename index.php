@@ -61,10 +61,6 @@
             <section class="showcase persona" data-section="2" style="z-index:4;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
-                    <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
-                        <a href="" class="signin_button">Sign in</a>
-                    </div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">

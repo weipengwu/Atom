@@ -1101,16 +1101,22 @@ section.register .footer nav ul li a{
     margin: 0 auto;
     padding: 15px 0;
 }
+.mobile section.persona .section-graphic{
+    margin-top: 20px;
+}
 .mobile section.persona .section-graphic img{
     width: 120px;
 }
+.mobile section.persona .section-graphic img.img1{
+    margin-left: -60px;
+}
 .mobile section.persona .section-graphic img.img2{
-    top: 80px;
-    margin-left: -127px;
+    top: 85px;
+    margin-left: -110px;
 }
 .mobile section.persona .section-graphic img.img3{
-    top: 80px;
-    margin-left: -27px;
+    top: 85px;
+    margin-left: -10px;
 }
 .mobile.pagination{
     left: 15px;
