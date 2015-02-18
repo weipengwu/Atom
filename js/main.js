@@ -131,6 +131,6 @@ $(document).swipe({
     threshold:0
 })
 
-if($('.mobile .signinForm input[name="email"]').is(':focus')){
-	$('.mobile section.landing').css('overflow-y','scroll');
+if($('.signinForm input[name="email"]').is(':focus')){
+	$('section.landing').css('overflow-y','scroll');
 }
