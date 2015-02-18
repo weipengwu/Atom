@@ -1041,6 +1041,10 @@ section.register .footer nav ul li a{
 .mobile .showcase .top{
     text-align: center;
 }
+.showcase .top .logo{
+    margin: 0;
+    width: 90px;
+}
 .mobile section.about .section-wrapper{
     display: block;
 }
