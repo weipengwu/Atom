@@ -130,3 +130,7 @@ $(document).swipe({
     //Default is 75px, set to 0 for demo so any distance triggers swipe
     threshold:0
 })
+
+if($('.mobile .signinForm input[name="email"]').is(':focus')){
+	$('.mobile section.landing').css('overflow-y','scroll');
+}
