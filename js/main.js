@@ -131,6 +131,7 @@ $('body').on('focus','.mobile .signinForm input[name="email"]',function(){
 })
 
 $(document).ready(function(){
+	alert('document');
 	$('.pagination .dot').on('click', function(){
 		var toIndex = $(this).data('section');
 		moveToIndex(toIndex);
