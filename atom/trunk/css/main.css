@@ -1002,6 +1002,8 @@ section.register .footer nav ul li a{
     position: relative;
     margin: 0 auto;
     width: 70%;
+    left: 0;
+    top: 80px;
 }
 .mobile section.landing .form_container .signinForm{
     width: 100%;
