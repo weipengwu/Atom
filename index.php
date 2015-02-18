@@ -92,17 +92,13 @@
                         
                     </div>
                     <div class="section-graphic">
-                        <img src="img/insights-graphic-m.png">
+                        <img src="img/mobile/insights-graphic-m.png">
                     </div>
                 </div>
             </section>
             <section class="showcase sandbox" data-section="4" style="z-index:2;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
-                    <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
-                        <a href="" class="signin_button">Sign in</a>
-                    </div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">
@@ -112,7 +108,6 @@
                             <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                     <div class="section-graphic">
                         <img src="img/sandbox-graphic.png">
                     </div>
