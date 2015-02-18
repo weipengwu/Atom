@@ -1080,7 +1080,7 @@ section.register .footer nav ul li a{
     font-size: 15px;
     margin: 10px 0;
 }
-.mobile section.about .getstarted{
+.mobile section .getstarted{
     display: block;
     text-align: center;
     width: 90%;
@@ -1094,13 +1094,7 @@ section.register .footer nav ul li a{
     width: 85%;
     margin-top: 80px;
 }
-.mobile section.persona .getstarted{
-    display: block;
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px 0;
-}
+
 .mobile section.persona .section-graphic{
     margin-top: 20px;
 }
@@ -1117,6 +1111,12 @@ section.register .footer nav ul li a{
 .mobile section.persona .section-graphic img.img3{
     top: 85px;
     margin-left: -10px;
+}
+.mobile section.insights{
+    background: url(../img/mobile/insights-bg-m.jpg) no-repeat center center fixed;
+}
+.mobile section.insights .section-content .showcase-content{
+    width: 85%;
 }
 .mobile.pagination{
     left: 15px;

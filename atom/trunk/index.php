@@ -81,24 +81,18 @@
             <section class="showcase insights" data-section="3" style="z-index:3;display:none">
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
-                    <div class="top-container">
-                        <a href="register.html" class="reg_button">Register</a>
-                        <a href="" class="signin_button">Sign in</a>
-                    </div>
                 </div>
                 <div class="section-wrapper">
                     <div class="section-content">
                         <div class="showcase-content">
                             <h1 class="section-title">Insights and Analytics</h1>
                             <p>ATOM gives you a holistic view of your campaign's performance, KPIs and near real-time metrics just 15 seconds delayed. No more advertising into the void, measure your ROI.</p>
-                            <hr>
-                            <p>Our overlord dashboard lets you drill down even further. No more pouring over spreadsheets, or trying to match your advertising budget with real world results. It's like having your own Marketing Guru.</p>
                             <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
                         </div>
                         
                     </div>
                     <div class="section-graphic">
-                        <img src="img/insights-graphic.png">
+                        <img src="img/insights-graphic-m.png">
                     </div>
                 </div>
             </section>
