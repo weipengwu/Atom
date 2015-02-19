@@ -1196,10 +1196,16 @@ section.register .footer nav ul li a{
     font-size: 20px;
     line-height: 1;
 }
-.mobile .menu-open .row-1 a{
+.mobile .menu-open .row-last{
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 1;
+}
+.mobile .menu-open .row-1 a, .mobile .menu-open .row-last a{
     color: #fff;
     font-size: 20px;
     line-height: 1;
+    text-decoration: none;
 }
 .mobile .menu-open .nav .item{
     font-size: 25px;
