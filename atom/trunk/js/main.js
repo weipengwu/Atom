@@ -155,7 +155,7 @@ $(document).ready(function(){
 		$('section.devices .section-graphic').css('margin-left', '-400px');
 	}
 	$(window).resize(function(){
-		if($(window).width() < 1000 && $(window).width() > 780 && $(window).height() > 700){
+		if($(window).width() < 1001 && $(window).width() >= 780 && $(window).height() > 700){
 			$('section.devices .section-graphic').css('position', 'absolute');
 			$('section.devices .section-graphic').css('bottom', '400px');
 			$('section.devices .section-graphic').css('left', '50%');
