@@ -143,4 +143,9 @@ $(document).ready(function(){
 	$('.menu-open .close').on('click', function(){
 		$('.menu-open').hide();
 	})
+	if($(window).width() < 1000 && $(window).width() > 780 && $(window).height() > 700){
+		console.log("yes");
+		$('section.devices .section-graphic').css('position', 'absolute');
+		$('section.devices .section-graphic').css('bottom', '300px');
+	}
 })
