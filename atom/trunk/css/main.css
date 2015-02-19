@@ -996,11 +996,12 @@ section.register .footer nav ul li a{
     background: url(../img/mobile/landing-bg-m.jpg) no-repeat center center fixed; 
 }
 .mobile section.landing .form_container{
-    position: relative;
-    margin: 0 auto;
-    width: 70%;
-    left: 0;
-    top: 50px;
+    position: absolute;
+    width: 264px;
+    left: 50%;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: -132px;
 }
 .mobile section.landing .form_container .signinForm{
     width: 100%;
