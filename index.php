@@ -28,7 +28,7 @@
             <section class="menu-open" style="z-index: 99999; display:none">
                 <div class="close"></div>
                 <div class="row-1">
-                    <a href="">Sign In</a> | <a href="">Register</a>
+                    <a href="">Sign in</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Register</a>
                 </div>
                 <div class="nav">
                     <div class="item" data-section="1">What is atom?</div>
@@ -36,6 +36,9 @@
                     <div class="item" data-section="3">Insights & Analytics</div>
                     <div class="item" data-section="4">Our Sandbox</div>
                     <div class="item" data-section="5">Devices</div>
+                </div>
+                <div class="row-last">
+                    <a href="">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Privacy</a>
                 </div>
             </section>
             <section class="showcase landing" data-section="0" style="z-index:6;display:none">
