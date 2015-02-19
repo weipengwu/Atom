@@ -144,8 +144,11 @@ $(document).ready(function(){
 		$('.menu-open').hide();
 	})
 	if($(window).width() < 1000 && $(window).width() > 780 && $(window).height() > 700){
-		console.log("yes");
 		$('section.devices .section-graphic').css('position', 'absolute');
-		$('section.devices .section-graphic').css('bottom', '300px');
+		$('section.devices .section-graphic').css('bottom', '400px');
+		$('section.devices .section-graphic').css('left', '50%');
+		$('section.devices .section-graphic').css('margin-left', '-270px');
+	}else{
+		$('section.devices .section-graphic').removeAttr("style");
 	}
 })
