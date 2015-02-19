@@ -26,7 +26,7 @@
         ?>
         <div class="content mobile">
             <section class="showcase register" style="display:none">
-                <div class="top"><a href="index.html"><img src="img/logo-top.png" alt="logo" class="logo"></a></div>
+                <div class="top"><a href="index.html"><img src="img/logo-top@2x.png" alt="logo" class="logo" width="90"></a></div>
                 <div class="form_container">
                     <form class="regForm">
                         <h2>Create Account</h2>

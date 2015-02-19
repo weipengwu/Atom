@@ -40,7 +40,7 @@
             </section>
             <section class="showcase landing" data-section="0" style="z-index:6;display:none">
                 <div class="form_container">
-                    <img src="img/logo.png" alt="logo" class="logo">
+                    <img src="img/logo@2x.png" alt="logo" class="logo" width="85">
                     <h2 class="signin">Slogan here</h2>
                     <h3 class="subheading">Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
                     <form class="signinForm" method="post" action="">
@@ -56,7 +56,7 @@
             </section>
             <section class="showcase about" data-section="1" style="z-index:5;display:none">
                 <div class="top">
-                    <img src="img/logo-top.png" class="logo">
+                    <img src="img/logo-top.png@2x" class="logo" width="90">
                     <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
