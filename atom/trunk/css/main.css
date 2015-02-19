@@ -695,7 +695,7 @@ section.devices .footer nav ul li a{
     left: 40px;
     position: absolute;
     top: 50%;
-    z-index: 2147483643;
+    z-index: 99990;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1179,6 +1179,7 @@ section.register .footer nav ul li a{
     top: 0;
     text-align: center;
     width: 100%;
+    z-index: 99999;
 }
 .mobile .menu-open .close{
     position: absolute;
@@ -1186,9 +1187,11 @@ section.register .footer nav ul li a{
     right: 20px;
     background: url('../img/mobile/close-m.png') center center no-repeat;
     background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
 }
 .mobile .menu-open .row-1{
-    margin-top: 90px;
+    margin-top: 80px;
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 1;

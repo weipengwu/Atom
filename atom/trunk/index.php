@@ -74,7 +74,7 @@
             </section>
             <section class="showcase persona" data-section="2" style="z-index:4;display:none">
                 <div class="top">
-                    <img src="img/logo-top.png" class="logo">
+                    <img src="img/logo-top@2x.png" class="logo" width="90">
                     <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
@@ -95,7 +95,7 @@
             </section>
             <section class="showcase insights" data-section="3" style="z-index:3;display:none">
                 <div class="top">
-                    <img src="img/logo-top.png" class="logo">
+                    <img src="img/logo-top@2x.png" class="logo" width="90">
                     <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
@@ -114,7 +114,7 @@
             </section>
             <section class="showcase sandbox" data-section="4" style="z-index:2;display:none">
                 <div class="top">
-                    <img src="img/logo-top.png" class="logo">
+                    <img src="img/logo-top@2x.png" class="logo" width="90">
                     <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
@@ -132,7 +132,7 @@
             </section>
             <section class="showcase devices" data-section="5" style="z-index:1;display:none">
                 <div class="top">
-                    <img src="img/logo-top.png" class="logo">
+                    <img src="img/logo-top@2x.png" class="logo" width="90">
                     <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
