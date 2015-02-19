@@ -171,6 +171,7 @@ $(document).ready(function(){
 			$('section.devices .section-graphic').css('margin-left', '-400px');
 		}else{
 			$('section.devices .section-graphic').removeAttr("style");
+			$('section.insights .section-graphic').removeAttr("style");
 		}
 	})
 })
