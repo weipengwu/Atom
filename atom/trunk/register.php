@@ -1,3 +1,7 @@
+<?php
+    require_once 'lib/Mobile_Detect.php';
+    $detect = new Mobile_Detect;
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -17,7 +21,31 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <?php
+            if($detect->isMobile() && !$detect->isTablet()):
+        ?>
+        <div class="content mobile">
+            <section class="showcase register" style="display:none">
+                <div class="top"><a href="index.html"><img src="img/logo-top.png"></a></div>
+                <div class="form_container">
+                    <form class="regForm">
+                        <h2>Create Account</h2>
+                        <p>Get Started by entering your email address</p>
+                        <input type="text" placeholder="Email" name="email">
+                        <input type="submit" value="Get Started">
+                    </form>
+                </div>
+                <div class="footer">
+                    <nav>
+                        <ul>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+        <? else: ?>
         <div class="content">
             <section class="showcase register" style="display:none">
                 <div class="top"><a href="index.html"><img src="img/logo-register.png"></a></div>
@@ -39,6 +67,7 @@
                 </div>
             </section>
         </div>
+        <? endif;?>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
