@@ -56,7 +56,7 @@
             </section>
             <section class="showcase about" data-section="1" style="z-index:5;display:none">
                 <div class="top">
-                    <img src="img/logo-top.png@2x" class="logo" width="90">
+                    <img src="img/logo-top@2x.png" class="logo" width="90">
                     <div class="menu-mobile"></div>
                 </div>
                 <div class="section-wrapper">
