@@ -51,7 +51,7 @@
                         <input type="submit" value="Sign in">
                     </form>
                     <div>
-                        <a href="" class="createaccount">Create an Account</a>
+                        <a href="register.php" class="createaccount">Create an Account</a>
                     </div>
                 </div>
                 <div class="footer">
@@ -70,7 +70,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">What is ATOM?</h1>
                             <p>Atom is a self serve tool that small business owners can use to leverage the power of programmatic advertising to drive revenue and acquire new customers.</p>
-                            <p style="margin-top:15px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:15px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                     </div> 
                 </div>
@@ -85,7 +85,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">What are personas?</h1>
                             <p>ATOM uses personas to help you describe your ideal customer. Once defined our technology is designed to scour the programmatic landscape for web and mobile users that match your business.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                         <div class="section-graphic">
                             <img src="img/persona-graphic-1.png" class="img1">
@@ -106,7 +106,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">Insights and Analytics</h1>
                             <p>ATOM gives you a holistic view of your campaign's performance, KPIs and near real-time metrics just 15 seconds delayed. No more advertising into the void, measure your ROI.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                         
                     </div>
@@ -125,7 +125,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">Everyone's welcome in our sandbox</h1>
                             <p>ATOM integrated with Google Analytics, Etsy,<br>with many more to follow.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                     </div>
                     <div class="section-graphic">
@@ -143,7 +143,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">Your ad...everywhere</h1>
                             <p>ATOM is able to deploy your creative campaign across any medium to target your customers on desktop, tablet or mobile devices.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                         
                     </div>
@@ -175,7 +175,7 @@
                         <input type="submit" value="Sign in">
                     </form>
                     <div>
-                        <a href="" class="createaccount">Create an Account</a>
+                        <a href="register.php" class="createaccount">Create an Account</a>
                     </div>
                 </div>
                 <div class="footer">
@@ -192,7 +192,7 @@
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
                     <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
+                        <a href="register.php" class="reg_button">Register</a>
                         <a href="" class="signin_button">Sign in</a>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">What is ATOM?</h1>
                             <p>Atom is a self serve tool that small business owners can use to leverage the power of programmatic advertising to drive revenue and acquire new customers.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                     </div>
                     <div class="section-graphic">
@@ -213,7 +213,7 @@
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
                     <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
+                        <a href="register.php" class="reg_button">Register</a>
                         <a href="" class="signin_button">Sign in</a>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">What are personas?</h1>
                             <p>ATOM uses personas to help you describe your ideal customer. Once defined our technology is designed to scour the programmatic landscape for web and mobile users that match your business.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                         <div class="section-graphic">
                             <img src="img/persona-graphic-1.png" class="img1">
@@ -237,7 +237,7 @@
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
                     <div class="top-container">
-                        <a href="register.html" class="reg_button">Register</a>
+                        <a href="register.php" class="reg_button">Register</a>
                         <a href="" class="signin_button">Sign in</a>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                             <p>ATOM gives you a holistic view of your campaign's performance, KPIs and near real-time metrics just 15 seconds delayed. No more advertising into the void, measure your ROI.</p>
                             <hr>
                             <p>Our overlord dashboard lets you drill down even further. No more pouring over spreadsheets, or trying to match your advertising budget with real world results. It's like having your own Marketing Guru.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                         
                     </div>
@@ -261,7 +261,7 @@
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
                     <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
+                        <a href="register.php" class="reg_button">Register</a>
                         <a href="" class="signin_button">Sign in</a>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">Everyone's welcome in our sandbox</h1>
                             <p>ATOM integrated with Google Analytics, Etsy,<br>with many more to follow.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -283,7 +283,7 @@
                 <div class="top">
                     <img src="img/logo-top.png" class="logo">
                     <div class="top-container"> 
-                        <a href="register.html" class="reg_button">Register</a>
+                        <a href="register.php" class="reg_button">Register</a>
                         <a href="" class="signin_button">Sign in</a>
                     </div>
                 </div>
@@ -292,7 +292,7 @@
                         <div class="showcase-content">
                             <h1 class="section-title">Your ad...everywhere</h1>
                             <p>ATOM is able to deploy your creative campaign across any medium to target your customers on desktop, tablet or mobile devices.</p>
-                            <p style="margin-top:20px;"><a href="register.html" class="getstarted">Get Started</a></p>
+                            <p style="margin-top:20px;"><a href="register.php" class="getstarted">Get Started</a></p>
                         </div>
                         
                     </div>
