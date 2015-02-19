@@ -227,9 +227,6 @@ section.about{
     z-index: 99;
     text-align: left;
 }
-.showcase.register .top{
-    text-align: center;
-}
 .showcase .top .logo{
     margin-left: 40px;
 }
@@ -725,7 +722,7 @@ section.devices .footer nav ul li a{
 }
 
 section.register{
-    background: url(../img/register-bg.jpg) no-repeat center center fixed; 
+    background: url(../img/landing-bg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -995,7 +992,7 @@ section.register .footer nav ul li a{
 .mobile section.showcase{
     min-width: 0;
 }
-.mobile section.landing{
+.mobile section.landing, .mobile section.register{
     background: url(../img/mobile/landing-bg-m.jpg) no-repeat center center fixed; 
 }
 .mobile section.landing .form_container{
