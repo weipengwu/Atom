@@ -117,10 +117,12 @@ function init_scroll(event, delta) {
 
 $(document).swipe({
 	swipeDown:function(event, direction, distance, duration, fingerCount) {
-      $(this).moveUp();  
+      $(this).moveUp(); 
+      $('input').blur();
     },
     swipeUp:function(event, direction, distance, duration, fingerCount) {
       $(this).moveDown();  
+      $('input').blur();
     },
     //Default is 75px, set to 0 for demo so any distance triggers swipe
     threshold:20
