@@ -25,15 +25,17 @@
             if($detect->isMobile() && !$detect->isTablet()):
         ?>
         <div class="content mobile">
-            <section class="showcase register" style="display:none">
-                <div class="top"><a href="index.php"><img src="img/logo-top@2x.png" alt="logo" class="logo" width="90"></a></div>
+            <section class="showcase register" style="display: none">
+                <div class="top"><a href="index.php"><img src="img/logo-top.png" alt="logo" class="logo"></a></div>
                 <div class="form_container">
                     <form class="regForm">
-                        <h2>Create Account</h2>
-                        <p>Get Started by entering your email address</p>
-                        <input type="text" placeholder="Email" name="email">
-                        <input type="submit" value="Get Started">
+                        <h2>Security Check</h2>
+                        <p>We’ve just emailed you a passcode for security validation</p>
+                        <input type="text" placeholder="Passcode" name="passcode">
+                        <input type="submit" value="Validate">
                     </form>
+                    <hr>
+                    <a href="register.php" class="back">Back</a>
                 </div>
                 <div class="footer">
                     <nav>
@@ -47,15 +49,17 @@
         </div>
         <? else: ?>
         <div class="content">
-            <section class="showcase register" style="display:none">
+            <section class="showcase register" style="display: none">
                 <div class="top"><a href="index.php"><img src="img/logo-top.png" alt="logo" class="logo"></a></div>
                 <div class="form_container">
                     <form class="regForm">
-                        <h2>Create Account</h2>
-                        <p>Get Started by entering your email address</p>
-                        <input type="text" placeholder="Email" name="email">
-                        <input type="submit" value="Get Started">
+                        <h2>Security Check</h2>
+                        <p>We’ve just emailed you a passcode for security validation</p>
+                        <input type="text" placeholder="Passcode" name="passcode">
+                        <input type="submit" value="Validate">
                     </form>
+                    <hr>
+                    <a href="register.php" class="back">Back</a>
                 </div>
                 <div class="footer">
                     <nav>
