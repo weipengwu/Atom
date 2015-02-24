@@ -762,7 +762,7 @@ section.register .form_container p{
     margin: 0 0 30px 0;
 }
 .regForm input[type="text"]{
-    width: 260px;
+    width: 300px;
     padding: 20px;
     border: 0;
     color: #aaadae;
@@ -770,8 +770,9 @@ section.register .form_container p{
     line-height: 1;
     outline: 0;
     font-size: 18px;
-    height: 18px;
+    height: 58px;
     margin-bottom: 25px;
+    box-sizing: border-box;
 }
 .regForm input[type="submit"]{
     padding: 20px;
