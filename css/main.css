@@ -770,7 +770,7 @@ section.register .form_container p{
     line-height: 1;
     outline: 0;
     font-size: 18px;
-    height: 58px;
+    height: 60px;
     margin-bottom: 25px;
     box-sizing: border-box;
 }
@@ -784,7 +784,7 @@ section.register .form_container p{
     border: 0;
     outline: 0;
     line-height: 1;
-    height: 58px;
+    height: 60px;
 }
 section.register .form_container hr{
     margin: 30px 0;
@@ -810,7 +810,7 @@ section.register.complete .form_container{
 }
 section.register.complete .regForm input[type="text"]{
     padding-left: 60px;
-    width: 220px;
+    /*width: 220px;*/
     margin-bottom: 10px;
 }
 section.register.complete .regForm input.emailfield{
